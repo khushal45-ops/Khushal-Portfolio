@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushal Karde | Data Science & AI Engineer</title>
+    <meta name="description" content="Portfolio of Khushal Karde, Data Science Undergraduate specializing in AI/ML and Backend Systems.">
+    <!-- Premium Google Fonts: Inter for editorial sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Khushal Karde.</div>
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-btn">Let's Connect &rarr;</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Subtle radial glow behind visual -->
+        <div class="hero-glow"></div>
+
+        <div class="container hero-container">
+            <!-- LEFT: Text content -->
+            <div class="hero-content scroll-reveal">
+                <div class="hero-badge">
+                    <span class="pulse-dot"></span>
+                    OPEN TO OPPORTUNITIES
+                </div>
+
+                <h1>Hi, I'm<br><span class="name-highlight">Khushal Karde.</span></h1>
+
+                <p class="hero-subtitle">Data Science Undergraduate | AI/ML &amp; Backend Systems</p>
+
+                <p class="hero-intro">
+                    I'm a Data Science-focused CSE undergraduate passionate about using
+                    Python, data, AI/ML and backend technologies to build real-world solutions.
+                    I love turning raw data into meaningful outcomes.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">View Projects &rarr;</a>
+                    <a href="public/resume.pdf" target="_blank" class="btn btn-secondary">Download Resume &darr;</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: High-End 3D Parallax AI System -->
+            <div class="hero-visual" id="heroParallax">
+                
+                <!-- Layer 1: Background Grid -->
+                <div class="parallax-layer pl-grid" data-depth="0.05">
+                    <svg width="100%" height="100%">
+                        <pattern id="gridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+                            <circle cx="2" cy="2" r="1.5" fill="rgba(37,99,235,0.1)"/>
+                        </pattern>
+                        <rect width="100%" height="100%" fill="url(#gridPattern)"/>
+                    </svg>
+                </div>
+
+                <!-- Layer 2: Orbit Rings & Geometric Elements -->
+                <div class="parallax-layer pl-rings" data-depth="0.15">
+                    <div class="p-ring pr-1"></div>
+                    <div class="p-ring pr-2">
+                        <div class="pr-node" style="top: -4px; left: 50%;"></div>
+                        <div class="pr-node" style="bottom: -4px; left: 50%;"></div>
+                    </div>
+                    <div class="p-ring pr-3"></div>
+                </div>
+
+                <!-- Layer 3: Data Paths connecting Core to Panels -->
+                <div class="parallax-layer pl-paths" data-depth="0.25">
+                    <svg width="100%" height="100%" viewBox="0 0 500 500" class="svg-paths">
+                        <!-- Path to Top Right Panel -->
+                        <path id="path-tr" d="M250 250 C 350 200, 380 120, 420 100" fill="none" stroke="rgba(37,99,235,0.3)" stroke-width="2" stroke-dasharray="4 4"/>
+                        <!-- Path to Bottom Right Panel -->
+                        <path id="path-br" d="M250 250 C 320 300, 350 400, 400 420" fill="none" stroke="rgba(56,189,248,0.3)" stroke-width="2"/>
+                        <!-- Path to Left Panel -->
+                        <path id="path-l" d="M250 250 C 150 220, 100 280, 50 260" fill="none" stroke="rgba(37,99,235,0.2)" stroke-width="1.5"/>
+                        
+                        <!-- Glowing animated dots travelling on paths -->
+                        <circle r="4" fill="#38bdf8" filter="drop-shadow(0 0 4px #38bdf8)">
+                            <animateMotion dur="4s" repeatCount="indefinite" path="M250 250 C 350 200, 380 120, 420 100" />
+                        </circle>
+                        <circle r="3" fill="#60a5fa" filter="drop-shadow(0 0 3px #60a5fa)">
+                            <animateMotion dur="5s" repeatCount="indefinite" path="M250 250 C 320 300, 350 400, 400 420" />
+                        </circle>
+                        <circle r="3.5" fill="#2563eb" filter="drop-shadow(0 0 3px #2563eb)">
+                            <animateMotion dur="3.5s" repeatCount="indefinite" path="M250 250 C 150 220, 100 280, 50 260" />
+                        </circle>
+                    </svg>
+                </div>
+
+                <!-- Layer 4: 3D Central Core -->
+                <div class="parallax-layer pl-core" data-depth="0.4">
+                    <div class="core-3d">
+                        <div class="core-inner-glow"></div>
+                        <div class="core-glass-reflection"></div>
+                        <!-- Neural net inside core -->
+                        <svg class="core-neural-svg" viewBox="0 0 100 100">
+                            <!-- Connections -->
+                            <line x1="50" y1="20" x2="25" y2="50" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                            <line x1="50" y1="20" x2="75" y2="50" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                            <line x1="25" y1="50" x2="50" y2="80" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                            <line x1="75" y1="50" x2="50" y2="80" stroke="rgba(255,255,255,0.4)" stroke-width="1.5"/>
+                            <line x1="25" y1="50" x2="75" y2="50" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                            <line x1="50" y1="20" x2="50" y2="80" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+                            <!-- Neural Nodes -->
+                            <circle cx="50" cy="50" r="5" fill="#fff" filter="drop-shadow(0 0 4px #fff)"/>
+                            <circle cx="50" cy="20" r="3" fill="#e0f2fe"/>
+                            <circle cx="25" cy="50" r="3" fill="#e0f2fe"/>
+                            <circle cx="75" cy="50" r="3" fill="#e0f2fe"/>
+                            <circle cx="50" cy="80" r="3" fill="#e0f2fe"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Layer 5: Floating Analytics Panels -->
+                <div class="parallax-layer pl-panels" data-depth="0.6">
+                    
+                    <!-- Prediction Panel (Top Right) -->
+                    <div class="sys-panel panel-pred float-anim-1">
+                        <div class="sys-header">
+                            <span class="sys-dot green"></span>
+                            <div class="sys-title">Predictive Model</div>
+                        </div>
+                        <svg viewBox="0 0 120 40" class="sys-curve">
+                            <path d="M 0 35 C 30 35, 50 10, 80 15 S 100 5, 120 10 L 120 40 L 0 40 Z" fill="url(#pCurveGrad)" opacity="0.6"/>
+                            <path d="M 0 35 C 30 35, 50 10, 80 15 S 100 5, 120 10" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+                            <circle cx="80" cy="15" r="3" fill="#2563eb"/>
+                            <defs>
+                                <linearGradient id="pCurveGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#3b82f6"/>
+                                    <stop offset="100%" stop-color="rgba(59,130,246,0)"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <div class="sys-metrics">
+                            <div class="sm-group"><span class="sm-val">98.4%</span><span class="sm-lbl">Accuracy</span></div>
+                            <div class="sm-group align-right"><span class="sm-val green">+1.2%</span><span class="sm-lbl">Validation</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Pipeline Activity (Left) -->
+                    <div class="sys-panel panel-pipe float-anim-2">
+                        <div class="sys-header">
+                            <span class="sys-dot blue"></span>
+                            <div class="sys-title">Data Pipeline</div>
+                        </div>
+                        <div class="sys-bars">
+                            <div class="sb" style="height: 30%"></div>
+                            <div class="sb" style="height: 60%"></div>
+                            <div class="sb active" style="height: 90%"></div>
+                            <div class="sb" style="height: 40%"></div>
+                            <div class="sb" style="height: 70%"></div>
+                            <div class="sb" style="height: 50%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Resource Utilization (Bottom Right) -->
+                    <div class="sys-panel panel-res float-anim-3">
+                        <div class="sys-header">
+                            <span class="sys-dot purple"></span>
+                            <div class="sys-title">Compute Cluster</div>
+                        </div>
+                        <div class="sys-flex">
+                            <svg class="sys-donut" viewBox="0 0 36 36">
+                                <path class="sys-donut-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                <path class="sys-donut-fill" stroke-dasharray="82, 100" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="sys-stats">
+                                <div class="ss-row"><span class="ss-box blue"></span> GPU: 82%</div>
+                                <div class="ss-row"><span class="ss-box light"></span> MEM: 45%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wave transition at bottom -->
+        <div class="hero-wave">
+            <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+                <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-light">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Featured <span class="text-accent">Projects</span></h2>
+                <p>Selected works showcasing AI, backend architecture, and data engineering.</p>
+            </div>
+            
+            <div class="projects-container">
+                <!-- Large Featured Project -->
+                <article class="project-card large scroll-reveal">
+                    <div class="project-visual">
+                        <img src="assets/smartrail_new.png" alt="SmartRail Dashboard" class="project-img contain-img">
+                    </div>
+                    <div class="project-info">
+                        <div class="project-badge">FEATURED PROJECT</div>
+                        <h3>SmartRail-</h3>
+                        <p class="description">AI-powered Railway Management System built for modern transportation infrastructure.</p>
+                        
+                        <div class="project-details-grid">
+                            <div class="detail-col">
+                                <strong class="detail-header">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="detail-icon blue"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+                                    Problem Solved:
+                                </strong>
+                                <p>Enhances railway management by predicting train delays, reallocating smart tickets, and providing live tracking with real-time alerts.</p>
+                            </div>
+                            <div class="detail-col">
+                                <strong class="detail-header">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="detail-icon blue"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    Key Features:
+                                </strong>
+                                <p>Train delay prediction, smart ticket reallocation, real-time alerts, AI chatbot.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-stack-premium">
+                            <span class="pill-premium">Python</span>
+                            <span class="pill-premium">FastAPI</span>
+                            <span class="pill-premium">PostgreSQL</span>
+                            <span class="pill-premium">React.js</span>
+                            <span class="pill-premium">Tailwind CSS</span>
+                        </div>
+                        <div class="project-actions-premium">
+                            <a href="https://github.com/khushal45-ops/SmartRail-" target="_blank" class="btn-premium-outline">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                                Source Code &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4 Project Cards Row -->
+                <div class="projects-row scroll-reveal">
+                    
+                    <!-- Card 1: PowerSight -->
+                    <article class="project-card compact">
+                        <div class="project-visual logo-bg-powersight">
+                        <div class="premium-logo-box">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#ps-grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="ps-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#10b981" /><stop offset="100%" stop-color="#3b82f6" /></linearGradient></defs><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                        </div>
+                    </div>
+                        <div class="project-info">
+                            <span class="category-badge">AI/ML</span>
+                            <h3>PowerSight</h3>
+                            <p class="description">Advanced Python-based AI/ML platform for predictive energy analytics and anomaly detection.</p>
+                            <div class="tech-stack">
+                                <span class="pill">Python</span>
+                                <span class="pill">Analytics</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/khushal45-ops/PowerSight" target="_blank" class="btn-text">
+                                    Source Code &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 2: Insight-Grid -->
+                    <article class="project-card compact">
+                        <div class="project-visual logo-bg-insight">
+                        <div class="premium-logo-box">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#ig-grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="ig-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#8b5cf6" /><stop offset="100%" stop-color="#3b82f6" /></linearGradient></defs><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                        </div>
+                    </div>
+                        <div class="project-info">
+                            <span class="category-badge">NLP</span>
+                            <h3>Insight-Grid</h3>
+                            <p class="description">AI-powered system to detect and classify misinformation in real-time using transformer models.</p>
+                            <div class="tech-stack">
+                                <span class="pill">NLP</span>
+                                <span class="pill">Transformers</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/khushal45-ops/Insight-Grid" target="_blank" class="btn-text">
+                                    Source Code &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 3: MockMate -->
+                    <article class="project-card compact">
+                        <div class="project-visual logo-bg-mockmate">
+                        <div class="premium-logo-box">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#mm-grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="mm-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#f59e0b" /><stop offset="100%" stop-color="#a855f7" /></linearGradient></defs><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>
+                        </div>
+                    </div>
+                        <div class="project-info">
+                            <span class="category-badge">Voice AI</span>
+                            <h3>MockMate</h3>
+                            <p class="description">Complete AI-powered interview preparation platform with voice analysis and MCQ tests.</p>
+                            <div class="tech-stack">
+                                <span class="pill">Voice AI</span>
+                                <span class="pill">Analytics</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/khushal45-ops/MockMate" target="_blank" class="btn-text">
+                                    Source Code &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Card 4: Recruiter-ai -->
+                    <article class="project-card compact">
+                        <div class="project-visual logo-bg-recruiter">
+                        <div class="premium-logo-box">
+                            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="url(#rc-grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><defs><linearGradient id="rc-grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#3b82f6" /><stop offset="100%" stop-color="#ec4899" /></linearGradient></defs><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+                        </div>
+                    </div>
+                        <div class="project-info">
+                            <span class="category-badge">Full Stack AI</span>
+                            <h3>Recruiter-ai</h3>
+                            <p class="description">Precision recruitment powered by AI — instantly ranks candidates against job descriptions.</p>
+                            <div class="tech-stack">
+                                <span class="pill">React</span>
+                                <span class="pill">TypeScript</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/khushal45-ops/Recruiter-ai" target="_blank" class="btn-text">
+                                    Source Code &rarr;
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                </div>
+                
+                <div class="view-all scroll-reveal">
+                    <a href="https://github.com/khushal45-ops" target="_blank" class="btn btn-outline btn-lg">View All Projects on GitHub &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="about-editorial-grid">
+
+                <!-- LEFT: Heading -->
+                <div class="about-left scroll-reveal">
+                    <p class="about-eyebrow">MY APPROACH</p>
+                    <h2>Turning <span class="text-accent">Data</span> Into<br>Real-World<br>Solutions.</h2>
+                    <p class="about-tagline">I enjoy the process of understanding a problem deeply, finding the right data and building something that actually works.</p>
+                </div>
+
+                <!-- RIGHT: Numbered feature blocks -->
+                <div class="about-right scroll-reveal">
+
+                    <div class="approach-block">
+                        <div class="approach-number">01</div>
+                        <div class="approach-content">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                                </div>
+                                <h3>Problem Solving</h3>
+                            </div>
+                            <p>I break complex problems into smaller, measurable steps and use analytical thinking to find practical, efficient solutions.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-separator"></div>
+
+                    <div class="approach-block">
+                        <div class="approach-number">02</div>
+                        <div class="approach-content">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"/><path d="M12 2a10 10 0 0 1 10 10"/><circle cx="12" cy="12" r="3"/></svg>
+                                </div>
+                                <h3>Data &amp; AI</h3>
+                            </div>
+                            <p>I work with data, machine learning and generative AI to uncover insights and build intelligent, automated workflows.</p>
+                        </div>
+                    </div>
+
+                    <div class="approach-separator"></div>
+
+                    <div class="approach-block">
+                        <div class="approach-number">03</div>
+                        <div class="approach-content">
+                            <div class="approach-header">
+                                <div class="approach-icon">
+                                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="3" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                                </div>
+                                <h3>Building Practical Solutions</h3>
+                            </div>
+                            <p>I combine data science with backend development to turn ideas into useful, scalable applications that solve real problems.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="skills-editorial-layout">
+                <div class="skills-heading scroll-reveal">
+                    <h2>Tools I<br>Build With</h2>
+                    <p>Technologies I use across data analysis, machine learning, AI and application development.</p>
+                </div>
+                <div class="skills-categories scroll-reveal">
+                    <div class="sk-cat">
+                        <div class="sk-cat-label">Programming</div>
+                        <div class="sk-pills"><span class="sk-pill">Python</span></div>
+                    </div>
+                    <div class="sk-cat">
+                        <div class="sk-cat-label">Data &amp; Analytics</div>
+                        <div class="sk-pills">
+                            <span class="sk-pill">SQL</span>
+                            <span class="sk-pill">NumPy</span>
+                            <span class="sk-pill">Pandas</span>
+                            <span class="sk-pill">Matplotlib</span>
+                        </div>
+                    </div>
+                    <div class="sk-cat">
+                        <div class="sk-cat-label">Machine Learning</div>
+                        <div class="sk-pills">
+                            <span class="sk-pill">Scikit-learn</span>
+                            <span class="sk-pill">Machine Learning</span>
+                            <span class="sk-pill">Deep Learning</span>
+                            <span class="sk-pill">TensorFlow</span>
+                        </div>
+                    </div>
+                    <div class="sk-cat">
+                        <div class="sk-cat-label">Generative AI</div>
+                        <div class="sk-pills">
+                            <span class="sk-pill">Generative AI</span>
+                            <span class="sk-pill">LLM</span>
+                            <span class="sk-pill">RAG</span>
+                            <span class="sk-pill">Agentic AI</span>
+                        </div>
+                    </div>
+                    <div class="sk-cat">
+                        <div class="sk-cat-label">Backend &amp; Tools</div>
+                        <div class="sk-pills">
+                            <span class="sk-pill">FastAPI</span>
+                            <span class="sk-pill">PostgreSQL</span>
+                            <span class="sk-pill">Git/GitHub</span>
+                            <span class="sk-pill">DSA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section bg-alt">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Achievements &amp; Milestones</h2>
+            </div>
+            <div class="achievement-cards scroll-reveal">
+                <div class="ach-card">
+                    <span class="ach-year">2025</span>
+                    <div class="ach-icon">🚀</div>
+                    <h4>Bharatiya Antariksh Hackathon</h4>
+                    <p>Finalist — National space-tech hackathon by ISRO</p>
+                </div>
+                <div class="ach-card">
+                    <span class="ach-year">2025</span>
+                    <div class="ach-icon">🏙️</div>
+                    <h4>MumbaiHacks</h4>
+                    <p>Finalist — Competitive national hackathon</p>
+                </div>
+                <div class="ach-card">
+                    <span class="ach-year">2025</span>
+                    <div class="ach-icon">🎓</div>
+                    <h4>Upskill India Challenge</h4>
+                    <p>Top 7 — IIT Bombay national challenge</p>
+                </div>
+                <div class="ach-card">
+                    <span class="ach-year">2025</span>
+                    <div class="ach-icon">⚙️</div>
+                    <h4>Techostav</h4>
+                    <p>Core Committee Member — College technical fest</p>
+                </div>
+                <div class="ach-card">
+                    <span class="ach-year">2025</span>
+                    <div class="ach-icon">✏️</div>
+                    <h4>IT Department Magazine</h4>
+                    <p>Editing Team Member</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Journey Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>How I'm Growing</h2>
+            </div>
+            <div class="roadmap scroll-reveal">
+                <div class="rm-track"></div>
+                <div class="rm-node">
+                    <div class="rm-num">01</div>
+                    <div class="rm-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    </div>
+                    <div class="rm-label">
+                        <strong>Python</strong>
+                        <span>Programming fundamentals &amp; data scripting</span>
+                    </div>
+                </div>
+                <div class="rm-node">
+                    <div class="rm-num">02</div>
+                    <div class="rm-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    </div>
+                    <div class="rm-label">
+                        <strong>Data Analysis</strong>
+                        <span>SQL, Pandas, Matplotlib &amp; EDA</span>
+                    </div>
+                </div>
+                <div class="rm-node">
+                    <div class="rm-num">03</div>
+                    <div class="rm-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg>
+                    </div>
+                    <div class="rm-label">
+                        <strong>Machine Learning</strong>
+                        <span>Scikit-learn, supervised &amp; unsupervised models</span>
+                    </div>
+                </div>
+                <div class="rm-node">
+                    <div class="rm-num">04</div>
+                    <div class="rm-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg>
+                    </div>
+                    <div class="rm-label">
+                        <strong>Deep Learning</strong>
+                        <span>TensorFlow, neural networks &amp; model training</span>
+                    </div>
+                </div>
+                <div class="rm-node active">
+                    <div class="rm-num">05</div>
+                    <div class="rm-circle">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 1 0 10 10"></path><path d="M12 6v6l4 2"></path></svg>
+                    </div>
+                    <div class="rm-label">
+                        <strong>Generative AI</strong>
+                        <span>LLMs, RAG pipelines &amp; Agentic AI systems</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container text-center scroll-reveal">
+            <p class="cta-label">GET IN TOUCH</p>
+            <h2>Let's build something useful.</h2>
+            <p class="cta-sub">I'm open to internships, projects and collaborations in AI, data science and backend development.</p>
+            <div class="cta-links">
+                <!-- GitHub -->
+                <a href="https://github.com/khushal45-ops" target="_blank" class="cta-link-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                    GitHub
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/khushal-karde-4b8164333" target="_blank" class="cta-link-btn cta-linkedin">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    LinkedIn
+                </a>
+                <!-- Email -->
+                <a href="mailto:khushalkarde45@gmail.com" class="cta-link-btn cta-email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Khushal Karde.</p>
+            <div class="footer-links">
+                <a href="https://github.com/khushal45-ops" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/khushal-karde-4b8164333" target="_blank">LinkedIn</a>
+                <a href="mailto:khushalkarde45@gmail.com">Email</a>
+            </div>
+            <p>Data Science &bull; AI/ML &bull; Building with Code</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Parallax Mouse Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hero = document.getElementById('heroParallax');
+            if (!hero) return;
+            const layers = hero.querySelectorAll('.parallax-layer');
+            
+            hero.addEventListener('mousemove', (e) => {
+                const rect = hero.getBoundingClientRect();
+                // Calculate mouse position relative to center of container (-1 to 1)
+                const x = (e.clientX - rect.left - (rect.width / 2)) / (rect.width / 2);
+                const y = (e.clientY - rect.top - (rect.height / 2)) / (rect.height / 2);
+                
+                layers.forEach(layer => {
+                    const depth = parseFloat(layer.getAttribute('data-depth'));
+                    // Multiply by a factor to control intensity
+                    const moveX = x * depth * 40; 
+                    const moveY = y * depth * 40;
+                    layer.style.transform = `translate3d(${moveX}px, ${moveY}px, 0)`;
+                });
+            });
+
+            hero.addEventListener('mouseleave', () => {
+                layers.forEach(layer => {
+                    layer.style.transform = `translate3d(0, 0, 0)`;
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
